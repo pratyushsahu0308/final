@@ -23,11 +23,7 @@ const AdminSidebar = () => {
       url: "/admin/bookings",
       icon: "fas fa-receipt",
     },
-    {
-      name: "Users",
-      url: "/admin/users",
-      icon: "fas fa-user",
-    },
+
     {
       name: "Resumes",
       url: "/admin/reviews",
