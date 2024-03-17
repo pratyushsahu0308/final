@@ -29,7 +29,7 @@ const Header = () => {
       <div className="container">
         <div className="col-6 col-lg-3 p-0">
           <div className="navbar-brand">
-            <a href="/">
+            <a href="/home">
               <img
                 style={{ cursor: "pointer", width: "50%", height: "45%"}}
                 src="/images/Job_Connect_transparent.png"
@@ -43,12 +43,12 @@ const Header = () => {
   onClick={() => window.location.href = 'https://placement-predict-o1ix.onrender.com/'}
   style={{
     padding: '10px 20px',
-    backgroundColor: 'red',
+    backgroundColor: '#e61e4d',
     color: 'white',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
-    fontSize: '16px',
+    fontSize: '14px',
     fontWeight: 'bold',
     textDecoration: 'none',
     transition: 'background-color 0.3s ease',
@@ -58,8 +58,8 @@ const Header = () => {
   Placement Prediction
 </button>
 
-        <SearchBar />
 
+        <SearchBar />
         <div className="col-6 col-lg-3 mt-3 mt-md-0 text-end">
           
           {user ? (

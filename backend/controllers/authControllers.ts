@@ -103,7 +103,7 @@ export const forgotPassword = catchAsyncErrors(async (req: NextRequest) => {
   try {
     await sendEmail({
       email: user.email,
-      subject: "BookIT Password Recovery",
+      subject: "Password Recovery",
       message,
     });
   } catch (error: any) {
