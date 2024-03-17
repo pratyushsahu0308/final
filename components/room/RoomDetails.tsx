@@ -19,21 +19,26 @@ const RoomDetails = ({ data }: Props) => {
 
 
   return (
-    <div className="container container-fluid">
-      <h2 className="mt-5">{room.name}</h2>
+    <div className="container container-fluid" >
+      <div style={{textAlign:"center"}}>
+      <h1 className="mt-5">{room.name}</h1>
       <p>{room.address}</p>
-
       <div className="ratings mt-auto mb-3">
-        <span className="no-of-reviews">{room.numOfReviews} Applications</span>
+        <span >{room.numOfReviews} Application</span>
       </div>
-      <RoomImageSlider images={room?.images} />
+      
+    </div>
 
       <div className="row my-5">
-        <div className="col-12 col-md-6 col-lg-8">
+        <div className="col-12 col-md-6 col-lg-6">
           <h3>Description</h3>
           <p>{room?.description}</p>
 
           <RoomFeatures room={room} />
+        </div>
+        <div className="col-12 col-md-6 col-lg-6">
+        <RoomImageSlider images={room?.images} />
+
         </div>
 
       </div>
