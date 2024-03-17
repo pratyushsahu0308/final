@@ -60,7 +60,7 @@ const Header = () => {
 
 
         <SearchBar />
-        <div className="col-6 col-lg-3 mt-3 mt-md-0 text-end">
+        <div className="col-6 col-lg-3 mt-3 mt-md-0 text-end"  style={{width:"100px"}}>
           
           {user ? (
             <div className="ml-4 dropdown d-line">
