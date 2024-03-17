@@ -13,7 +13,7 @@ interface Props {
 const RoomItem = ({ room }: Props) => {
   return (
   <>
-    <div className="col-sm-12 col-md-6 col-lg-3 my-3 d-flex booking-card shadow p-4">
+    <div className="col-sm-12 col-md-6 col-lg-3 my-3 d-flex booking-card shadow p-3">
       <div className="card p-2 w-100">
         <Image
           className="card-img-top mx-auto"
