@@ -25,7 +25,7 @@ const Search = () => {
   };
 
   return (
-    <div className="row wrapper mt-5">
+    <div className="row wrapper mt-5" style={{marginBottom:"50px"}}>
       <div className="col-10 col-lg-5">
         <form className="shadow rounded" onSubmit={submitHandler}>
           <h2 className="mb-3">Search Jobs</h2>
