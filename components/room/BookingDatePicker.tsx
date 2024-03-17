@@ -103,27 +103,16 @@ const BookingDatePicker = ({ room }: Props) => {
   // };
 
   return (
-    <div className="booking-card shadow p-4">
+    <div className="booking-card shadow pt-4" style={{padding:'1rem'}}>
       <p className="price-per-night">
-        <b>${room?.pricePerNight}</b> Fee
+        <b>${room?.pricePerNight}</b> Salary
       </p>
 
       <hr />
 
 
 
-      <DatePicker
-        className="w-100"
-        selected={checkInDate}
-        onChange={onChange}
-        startDate={checkInDate}
-        endDate={checkOutDate}
-        minDate={new Date()}
-        excludeDates={excludeDates}
-        selectsRange
-        inline
-      />
-
+      
       {isAvailable === true && (
         <div className="alert alert-success my-3">
           Room is available. Book now.
