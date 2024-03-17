@@ -6,6 +6,7 @@ import RoomImageSlider from "./RoomImageSlider";
 import RoomFeatures from "./RoomFeatures";
 import ListReviews from "../review/ListReviews";
 import NewReview from "../review/NewReview";
+import BookingDatePicker from "./BookingDatePicker";
 
 interface Props {
   data: {
@@ -35,6 +36,7 @@ const RoomDetails = ({ data }: Props) => {
           <p>{room?.description}</p>
 
           <RoomFeatures room={room} />
+          <BookingDatePicker room={room} />
         </div>
         <div className="col-12 col-md-6 col-lg-6">
         <RoomImageSlider images={room?.images} />
