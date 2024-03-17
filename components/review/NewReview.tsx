@@ -41,7 +41,7 @@ const NewReview = ({ roomId }: { roomId: string }) => {
 
   return (
     <>
-      {canReview && (
+      { (
         <button
           type="button"
           className="btn form-btn mt-4 mb-5"
