@@ -26,7 +26,7 @@ const ListReviews = ({ reviews }: Props) => {
                 alt={review?.user?.name}
                 width={60}
                 height={60}
-                className="rounded-circle"
+                style={{borderRadius:"2rem"}}
               />
             </div>
             <div className="col-9 col-lg-11">
@@ -42,7 +42,7 @@ const ListReviews = ({ reviews }: Props) => {
               <a href={`${review?.comment}`}>
                <button
           type="button"
-          className="btn form-btn mt-4 mb-5"
+          className="btn form-btn mt-1 mb-4"
         >
         View Resume
         </button></a>
