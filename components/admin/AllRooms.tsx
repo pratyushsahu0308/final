@@ -104,7 +104,7 @@ const AllRooms = ({ data }: Props) => {
         </Link>
       </h1>
 
-      <MDBDataTable data={setRooms()} className="px-3" bordered striped hover noBottomColumns={true}/>
+     
     </div>
   );
 };
